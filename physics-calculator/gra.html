@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+	<meta name="theme-color" content="#00acff">       
+	<meta name="msapplication-navbutton-color" content="#00acff"> <!-- iOS Safari --> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="#00acff">
+ <meta name="viewport" content="width=device-width, initial-scale=1"> 
+ <link rel="stylesheet" href="../css/stylep.css">
+ <link rel="stylesheet" href="../css/form.css">
+ <title>Page title</title>
+</head>
+<body>
+  <div class="top" id="fml">
+  		<h1> S = Ut + ½gt<sup>2</sup></h1>
+	 </div>
+	 <section>
+	   <div class="con" id="out">
+	   		<h1 id="add"><em>Output:</em></h1>
+	   </div>			
+			<form name="inps" data-way="Gravity">
+			  <a href="config.html" id="iconL"></a>
+				<fieldset>
+				  <legend><h2>Input your values:</h2></legend>
+					<label for="u"><span class="term">m<sub>1</sub></span> Mass<sub>1</sub></label>
+					<input type="text" name="par1" class="params" placeholder="Kg">
+					<label for="v"><span class="term">m<sub>2</sub></span> Mass<sub>2</sub>:</label>
+					<input type="text" name="par2" class="params" placeholder="Kg">
+				  <label for="a"><span class="term">r</span> Distance :</label>
+					<input type="text" name="par3" class="params" placeholder="m">
+								
+					<label for="s"><span class="term">F</span> Force:</label><br>
+					<input type="text" name="par4" class="params" placeholder="N">
+					<input type="button" value="Calculate" class="but" id="calc">
+					<input type="reset" value="Clear" class="but" id="clear">
+		  </form>
+	  </fieldset>
+  </section>
+<script src="../script/calc.js"></script>			
+</body>
+</html>

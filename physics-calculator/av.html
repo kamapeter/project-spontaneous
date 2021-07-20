@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+	<meta name="theme-color" content="#00acff">       
+	<meta name="msapplication-navbutton-color" content="#00acff"> <!-- iOS Safari --> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="#00acff">
+ <meta name="viewport" content="width=device-width, initial-scale=1"> 
+ <link rel="stylesheet" href="../css/stylep.css">
+ <link rel="stylesheet" href="../css/form.css">
+ <title>Settings</title>
+</head>
+<body>
+  <section>
+		 <form name="inps" data-way="a=b/c">
+			<a href="config.html" id="iconL"></a>
+			<fieldset>
+			  <legend><h2>Input your values:</h2></legend>
+				  <label for="m"><span class="term">v</span>Linear Velocity:</label>
+						<input name="par1" class="params" data-N ="Lin. Vel." placeholder="m/s"><br>
+						<label for="h"><span class="term">r</span>Radius:</label><br>
+						<input name="par2" class="params" data-N ="Radius" placeholder="m">
+						<label for="e"><span class="term">&rho;</span>Angular Velocity:</label>
+						<input name="par3" class="params" data-N ="Angular Vel." placeholder="rad/s">
+						<input type="button" value="Calculate" class="but" id="calc">
+						<input type="reset" value="Clear" class="but" id="clear" >
+				 </fieldset>		 
+		  </form>
+		  <div class="con" id="out">
+		  		<h1 id="add"><em>Output:</em></h1>
+		  </div>
+   </section>
+</body>
+<script src="../script/calc.js"></script>		
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+	<meta name="theme-color" content="#00acff">       
+	<meta name="msapplication-navbutton-color" content="#00acff"> <!-- iOS Safari --> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="#00acff">
+ <meta name="viewport" content="width=device-width, initial-scale=1"> 
+ <link rel="stylesheet" href="../css/stylep.css">
+ <link rel="stylesheet" href="../css/form.css">
+ <title>Page title</title>
+</head>
+<body>
+  <div class="top" id="fml">
+  		<h1> P = F ÷ A</h1>
+	</div>			
+  <section>
+		 <form name="inps" data-way="a=b/c">
+			<a href="config.html" id="iconL"></a>
+			<fieldset>
+			  <legend><h2>Input your values:</h2></legend>
+				  <label for="m"><span class="term">F</span>Force:</label>
+						<input name="par1" class="params" data-N ="Force" placeholder="N"><br>
+						<label for="h"><span class="term">A</span>Area:</label><br>
+						<input name="par2" class="params" data-N ="Area" placeholder="M²">
+						<label for="e"><span class="term">P</span>Pressure:</label>
+						<input name="par3" class="params" data-N ="Press." class="params" placeholder="N/m²">
+						<input type="button" value="Calculate" class="but" id="calc">
+						<input type="reset" value="Clear" class="but" id="clear" >
+				 </fieldset>		 
+		  </form>
+		  <div class="con" id="out">
+		  		<h1 id="add"><em>Output:</em></h1>
+		  </div>
+   </section>
+</body>
+<script src="../script/calc.js"></script>		
+</html>

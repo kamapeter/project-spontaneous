@@ -1,0 +1,272 @@
+body{
+				margin: 0;
+				padding: 0;
+				overflow-x: hidden;
+}
+.experiment{
+				display: block;
+				
+}
+.scon{
+				position: relative;				
+				height: 100vh;
+				width: 100vw;
+				top: 0vh;
+				left: 2;
+				overflow: hidden;
+				z-index: 25;
+}
+.stringnBob{
+				-webkit-transform-origin: 50% 0%;
+				    -ms-transform-origin: 50% 0%;
+				        transform-origin: 50% 0%;				
+				/*-webkit-animation: swing 2.374s ease 0s 20 normal both;*/
+				-webkit-animation: swing 2.02s linear 0s 20 normal both;
+				        animation: swing 2.02s linear 0s 20 normal both;
+}
+@keyframes swing{
+    0%{-webkit-transform: rotate(0deg);transform: rotate(0deg); }
+    35%{-webkit-transform: rotate(45deg);transform: rotate(45deg); }
+    50%{-webkit-transform: rotate(0deg);transform: rotate(0deg); }
+    85%{-webkit-transform: rotate(-45deg);transform: rotate(-45deg); }
+    100%{-webkit-transform: rotate(0deg);transform: rotate(0deg); }
+  }
+  @-webkit-keyframes swing{
+    0%{-webkit-transform: rotate(0deg);transform: rotate(0deg); }
+    35%{-webkit-transform: rotate(45deg);transform: rotate(45deg); }
+    50%{-webkit-transform: rotate(0deg);transform: rotate(0deg); }
+    85%{-webkit-transform: rotate(-45deg);transform: rotate(-45deg); }
+    100%{-webkit-transform: rotate(0deg);transform: rotate(0deg); }
+  }
+.string{
+				position: absolute;
+				height: 46vh;
+				width: 0.15em;
+				background-color: #ff8900;
+				top: 5;
+				left: 49.5vw;
+}
+.connect{
+				position: absolute;
+				top: 45vh;
+				left: 48.2vw;
+				-webkit-transform: rotate(180deg);
+				    -ms-transform: rotate(180deg);
+				        transform: rotate(180deg);
+				color: #3c4a50;
+}
+.bob{
+				position: absolute;
+				height: 4.6vh;
+				width: 7vw;
+				border: 100% solid black;
+				background-color: #4e525d;
+				top: 47.4vh;
+				left: 45.8vw;
+				border-radius: 300%;
+}
+.count{
+				position: absolute;
+				top: 5vh;
+				left: 80vw;
+				z-index: 2;
+				font-size: 40px;
+				color: #ffb300;
+				-webkit-animation: counter 2.374s ease-in 0s 20 normal forwards;
+				animation: counter 2.374s ease-in 0s 20 normal forwards;
+}
+/*@keyframes counter{
+    0%{opacity: 0;}
+    50%{ opacity: 1;}
+      }
+@-webkit-keyframes swing{
+      				0%{opacity: 0;}
+           80%{ opacity: 1;}
+            100%{ opacity: 0;}
+      }*/
+.relogio {
+                font-size: 24px; 
+                font-weight: bold; 
+                color: white; 
+                background-color: black; 
+                border-radius: 4px; 
+                padding: 20px; 
+                display: inline-block;
+                width: 120px;
+            }
+.retortStand{
+				position: relative;
+				top: -12vh;
+				left: -2vw;
+}
+.retort{
+				position: absolute;
+				height: 50vh;
+				width: 3vw;
+				background-color: black;
+				top: 0;
+				left: 50vw;	
+				z-index: -3;		
+}  
+.clamp{
+				position: absolute;
+				height: 5vh;
+				width: 5vw;
+				background-color: #5d5d5d;
+				top: 010vh;
+				left: 50vw;	
+				z-index: 26;
+				-webkit-transform-style: preserve-3d;
+				        transform-style: preserve-3d;
+				-webkit-transform: rotateZ(89.5deg) translateZ(100px);
+				        transform: rotateZ(89.5deg) translateZ(100px);
+				
+}          
+.base{
+				position: absolute;
+				height: 10vh;
+				width: 20vw;
+				background-color: black;
+				top: 40vh;
+				left: 42.5vw;	
+				z-index: 15;
+				-webkit-transform: rotateZ(89.5deg) translateZ(100px);
+				        transform: rotateZ(89.5deg) translateZ(100px);
+				-webkit-transform: scaleZ(5);
+				        transform: scaleZ(5);
+				-webkit-transform: skewX(10deg);
+				    -ms-transform: skewX(10deg);
+				        transform: skewX(10deg);
+}
+button{
+				width: 20vw;
+				height: 8vh;
+				background-color: #46354f;
+				color: white;
+				border-radius: 10px;
+				position: relative;
+				top: 20vh;
+}
+
+/*Data Analysis styles*/
+.analysis{
+				display: none;
+				color: #15b6ff;
+				width: 80vw;
+				padding: 5vw;
+				margin: 5vw;
+}
+table{
+				border-style: ;
+				color: #00141d;
+				display: block;
+}
+th,td,tr{	
+				border: 0.1em solid #0074ac;
+}
+.cell{
+				visibility: hidden;
+}
+.graph{
+				position: relative;
+				top: 4vh;
+				height: 50vh;
+				color: black;
+				display: none;
+}
+.yaxis{
+				height: 50vh;
+				width: 0.2em;
+				background-color: black;
+}
+.x-axis{
+				height: 0.2em;
+				width: 80vw;
+				background-color: black;
+				
+}
+.line{
+				height: 55vh;
+				width: 0.15em;
+				background-color: #009acc;
+				-webkit-transform: rotate(45deg);
+				    -ms-transform: rotate(45deg);
+				        transform: rotate(45deg);
+				position: absolute;
+				top: 3vh;
+				left: 31vw;
+				-webkit-animation: plot 2s linear 0s 1 normal forwards;
+				        animation: plot 2s linear 0s 1 normal forwards;
+				-webkit-transform-origin: 100% 100%;
+				    -ms-transform-origin: 100% 100%;
+				        transform-origin: 100% 100%;
+}
+ @-webkit-keyframes plot{
+				0%{-webkit-transform: scale(0.01) rotate(45deg);transform: scale(0.01) rotate(45deg);
+				top: -5vh;
+				left: 0.5vw;
+				}
+				100%{-webkit-transform: scale(1) rotate(45deg);transform: scale(1) rotate(45deg);
+				top: -5vh;
+				left: 0.5vw;
+				}
+}
+ @keyframes plot{
+				0%{-webkit-transform: scale(0.01) rotate(45deg);transform: scale(0.01) rotate(45deg);
+				top: -5vh;
+				left: 0.5vw;
+				}
+				100%{-webkit-transform: scale(1) rotate(45deg);transform: scale(1) rotate(45deg);
+				top: -5vh;
+				left: 0.5vw;
+				}
+}
+.y{
+				height: 20vh;
+				width: 0.15em;
+				background-color: #ef1e00;
+				position: absolute;
+				top: 19.4vh;
+				left: 51vw;
+				opacity:0;
+				-webkit-animation: grad 2.2s linear 2s 1 normal forwards;
+				        animation: grad 2.2s linear 2s 1 normal forwards;
+}
+.x-gradient{
+				height: 0.15em;
+				width: 32.7vw;
+				background-color: #ef1e00;
+				position: absolute;
+				top: 39vh;
+				left: 19.0vw;
+				opacity: 0;
+				-webkit-animation: grad 2.2s linear 2s 1 normal forwards;
+				        animation: grad 2.2s linear 2s 1 normal forwards;
+}
+ @-webkit-keyframes grad{
+ 				0%{opacity: 0;}
+ 				100%{opacity: 1;}
+ }
+ @keyframes grad{
+ 				0%{opacity: 0;}
+ 				100%{opacity: 1;}
+ }
+#arrx{
+position: absolute;
+				left: 78vw;
+				top: 48vh;
+				padding: -5vw;
+}
+#arry{
+position: absolute;
+				left: -0.3em;
+				top: -2.5vh;
+				margin-left: -10vw;
+}
+.gdeta{
+				padding: 5;
+				font-size: 1.2em;
+}
+.calc{
+				visibility: hidden;
+}

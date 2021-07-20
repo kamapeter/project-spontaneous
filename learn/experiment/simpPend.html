@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1"> 
+ 			 <meta http-equiv="CONTENT-TstorageYPE" content="text/html; charset=UTF-8">
+ 			 <meta name="viewport" content="width=device-width, initial-scale=1">
+		   <meta name="theme-color" content="#00acff">
+ 			 <meta name="msapplication-navbutton-color" content="#00acff">
+ <link rel="stylesheet" href="simpPend.css">
+				<title>Experimental Determination g</title>
+</head>
+<body>
+	<div class="experiment">
+		<div class="relogio">
+         <span id="hours">00</span>:
+         <span id="minutes">00</span>:
+         <span id="seconds">00</span>
+         <!--<span class = "cell" id="ms">00</span>-->
+   </div>
+     <div class="retortStand">
+   				  <div class="retort"></div>
+   				  <div class="clamp"></div>
+           <div class="base"></div>  
+     </div>
+      <div class="count"></div>
+      <div class="scon">
+				<div id="sB">
+								<div class="string"></div>
+								<div class="connect">C</div>
+								<div class="bob" id="bob"></div>
+				</div>
+				</div>
+			<!-- 	<button id="fire" >Fire</button> -->
+
+				
+		</div>
+		<div class="analysis">
+				<h1>Data Analysis</h1>
+						<table>
+								<tr>
+												<th>Length (m)</th>
+												<th>t<sub>20</sub>/20 (s)</th>
+												<th>T (s)</th>
+												<th>T² (m)</th>
+								</tr>
+								<tr>
+												<td><span class = "cell">1.00<span class = "cell"></td>
+												<td><span class = "cell">40.14<span class = "cell"></td>
+												<td><span class = "cell">2.01<span class = "cell"></td>
+												<td><span class = "cell">4.04<span class = "cell"></td>
+								</tr>
+								<tr>
+												<td><span class = "cell">0.80<span class = "cell"></td>
+												<td><span class = "cell">35.93<span class = "cell"></td>
+												<td><span class = "cell">1.80<span class = "cell"></td>
+												<td><span class = "cell">3.23<span class = "cell"></td>
+								</tr>
+								<tr>
+												<td><span class = "cell">0.60</span></td>
+												<td><span class = "cell">31.21</span></td>
+												<td><span class = "cell">1.56</span></td>
+												<td><span class = "cell">2.43</span></td>
+								</tr>
+								<tr>
+												<td><span class = "cell">0.40</span></td>
+												<td><span class = "cell">25.48</span></td>
+												<td><span class = "cell">1.27</span></td>
+												<td><span class = "cell">1.62</span></td>
+								</tr>
+								<tr>
+												<td><span class = "cell">0.20</span></td>
+												<td><span class = "cell">18.14</span></td>
+						          <td><span class = "cell">0.91</span></td>
+												<td><span class = "cell">0.82</span></td>
+								</tr>
+				</table>
+				
+				<div class="graph">
+								<div class="yaxis"><span id="arry">L/m &#9650;</span></div>
+								<div class="x-axis"><span id="arrx">&#9654; T²/s²</span></div>
+								<div class="line"></div>
+								<div class="y"></div>
+								<div class="x-gradient"></div>
+								<h3>Graph of L against T²</h3>
+								<div class="gdeta">
+														<span class="calc">Slope =</span><span class="calc"> L<sub>2</sub>-L<sub>1</sub> /T<sup>²</sup><sub>2</sub> - T<sup>²</sup><sub>1</sub></span><br><!--  -->
+														<span class="calc">s =</span><span class="calc"> 0.80 - 0.40 / 3.23 - 1.63</span><br>
+														<span class="calc">s = 0.248</span><br>
+														<span class="calc">But s</span><span class="calc"> = g/4π²</span><br>
+														<span class="calc">Therefore g</span><span class="calc"> = 4π² × 0.248</span><br>
+														<span class="calc">g = 9.79 ms<sup>-</sup>²</span>
+							</div>
+				</div>
+		</div>
+				<script type="text/javascript" src="exp.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1"> 
+ <link rel="stylesheet" href="../css/stylep.css">
+ <link rel="stylesheet" href="../css/form.css">
+ <style>
+ 				
+ </style>
+ 
+				<title>Page title</title>
+</head>
+<body>
+		<div class="topBar">
+				<span class="blueH"><a href="#findUnits" id="linkUnits">UNITS</a></span>
+				<span><a href="#findFormulae" id="linkFormulae">FORMULAE</a></span>
+		</div>
+		<section class="container">
+		<section class="sections" id="findUnits">
+				 <div class="top">
+          <h1>Find The Units</h1>
+	      </div>
+						<form name="unitForm" class="simp">
+							<input type="search" name="field" list="units" class="params" placeholder="Quantity">
+							<datalist id="units"></datalist>
+							<input type="button" value="Find" class="but" data-obj="units" id="findU">
+						 <input type="reset" value="Clear" class="but clear" id="clear" >
+			  	   </form>
+			  	   <ul class="resultCon"></ul>
+			</section>
+			<section class="sections" id="findFormulae">
+					<div class="top">
+          <h1>Find The Formulae</h1>
+        </div>
+					<form name="formulaeForm" class="simp">
+							<input type="search" name="field" list="formulae" class="params" placeholder="Quantity">
+					   <datalist id="formulae">
+							</datalist>
+							<input type="button" value="Find" class="but" data-obj="formulae" id="findF">
+						 <input type="reset" value="Clear" class="but clear" id="clear" >
+			  	 </form>
+			  	 <ul class="resultCon"></ul>
+			</section>			
+</section>
+ <script type="text/javascript" src="../script/find.js"></script>
+</body>
+</html>

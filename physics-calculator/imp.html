@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+	<meta name="theme-color" content="#00acff">       
+	<meta name="msapplication-navbutton-color" content="#00acff"> <!-- iOS Safari --> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="#00acff">
+ <meta name="viewport" content="width=device-width, initial-scale=1"> 
+ <link rel="stylesheet" href="../css/stylep.css">
+ <link rel="stylesheet" href="../css/form.css">
+ <title>Page title</title>
+</head>
+<body>
+  <div class="top" id="fml">
+  		<h1> I = F • dt</h1>
+	 </div>		
+  <section>
+		 <form name="inps" data-way="c=a*b">
+			<a href="config.html"><div id="iconL">&#x2699;</div></a>
+			<fieldset>
+			  <legend><h2>Input your values:</h2></legend>
+				  <label for="m"><span class="term">F</span>Mass:</label>
+						<input name="par1" class="params" data-N="Force" placeholder="N"><br>
+						<label for="h"><span class="term">dt</span>Duration(time):</label><br>
+						<input name="par2" class="params" placeholder="s" data-N="Duration">
+						<label for="e"><span class="term">I</span>Impulse:</label>
+						<input name="par3" class="params" class="params" data-N="Impulse" placeholder="Ns">
+						<input type="button" value="Calculate" class="but" id="calc">
+						<input type="reset" value="Clear" class="but" id="clear" >
+				 </fieldset>		 
+		  </form>
+		  <div class="con" id="out">
+		  		<h1 id="add"><em>Output:</em></h1>
+		  </div>
+   </section>
+</body>
+<script src="../script/calc.js"></script>		
+</html>

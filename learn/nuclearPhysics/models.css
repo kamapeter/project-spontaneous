@@ -1,0 +1,443 @@
+.expR {
+  position: relative;
+  height: 400px;
+  overflowy: clip;
+  margin: auto 0;
+}
+.shell {
+  width: 100px;
+  height: 100px;
+  background-color: #bebebe;
+  border-radius: 50%;
+  position: relative;
+  top: 30px;
+  left: 250px;
+}
+.proton {
+  height: 20px;
+  width: 20px;
+  background-color: #ff5f00;
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  margin: 0.1vh;
+  text-align: center;
+  opacity: 1;
+}
+.st {
+  top: 40px;
+  left: 30px;
+}
+.nd {
+  top: 55px;
+  left: 30px;
+}
+.neutron {
+  height: 20px;
+  width: 20px;
+  background-color: #00acff;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+}
+.nst {
+  top: 40px;
+  left: 47px;
+}
+.nnd {
+  top: 55px;
+  left: 47px;
+}
+.alphas {
+  position: relative;
+  top: -390px;
+}
+.alpha {
+  width: 35px;
+  height: 35px;
+  background-color: #ff0b00;
+  border-radius: 50%;
+  margin: 8px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  -webkit-animation: shoot 3s linear 0s infinite normal forwards;
+  animation: shoot 3s linear 0s infinite normal forwards;
+}
+@-webkit-keyframes shoot {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateX(350px);
+    transform: translateX(350px);
+  }
+}
+@keyframes shoot {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateX(350px);
+    transform: translateX(350px);
+  }
+}
+#afourth {
+  position: relative;
+  top: 6px;
+}
+#afifth {
+  position: relative;
+  top: 7px;
+}
+#and,
+#afourth,
+#asevth,
+#anth {
+  -webkit-animation: repel 3s linear 0s infinite normal forwards;
+  animation: repel 3s linear 0s infinite normal forwards;
+}
+@-webkit-keyframes repel {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  71.43% {
+    -webkit-transform: translate3d(250px, 0, 0);
+    transform: translate3d(250px, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(50px, -100px, 0);
+    transform: translate3d(50px, -100px, 0);
+  }
+}
+@keyframes repel {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  71.43% {
+    -webkit-transform: translate3d(250px, 0, 0);
+    transform: translate3d(250px, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(50px, -100px, 0);
+    transform: translate3d(50px, -100px, 0);
+  }
+} /* rutherford model*/
+.atomR {
+  position: relative;
+  font-size: 25px;
+  width: 250px;
+  height: 250px;
+  top: 25%;
+  margin: auto;
+}
+.orbit {
+  position: absolute;
+  left: 50px;
+  width: 200px;
+  height: 200px;
+  border: 1px #90ff00 solid;
+  border-radius: 50%;
+  -webkit-transform-origin: 50% t0%;
+  -ms-transform-origin: 50% t0%;
+  transform-origin: 50% t0%;
+  -webkit-animation: revolve 2s linear 0s infinite normal forwards;
+  animation: revolve 2s linear 0s infinite normal forwards;
+}
+.arrow {
+  position: absolute;
+  left: 82px;
+  top: 5px;
+  font-size: 40px;
+  color: red;
+}
+.electron {
+  position: absolute;
+  left: 90px;
+  top: -10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #00d6ff;
+  text-align: center;
+  color: yellow;
+}
+@-webkit-keyframes revolve {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes revolve {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.protonR {
+  position: absolute;
+  top: 80px;
+  left: 130px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: red;
+  text-align: center;
+  color: cyan;
+} /* bohr levels*/
+.atomO {
+  position: relative;
+  top: 100px;
+  font-size: 25px;
+  left: ;
+  width: 250px;
+  margin: 0 auto;
+}
+.ani #key {
+  color: red;
+  margin-left: 30px;
+}
+.orbitO {
+  position: absolute;
+  left: 50px;
+  width: 150px;
+  height: 150px;
+  border: 1px #90ff00 solid;
+  border-radius: 50%;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-animation: revolve 2s linear 0s infinite normal forwards;
+  animation: revolve 2s linear 0s infinite normal forwards;
+}
+.levels {
+  position: absolute;
+  top: 0;
+}
+#n3rd {
+  top: -120px;
+}
+#n2nd {
+	top: -50px;
+}
+#n1st {
+  top: 10px;
+  left: 10px;
+}
+#n2 {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  left: 5px;
+  top: -50px;
+  -webkit-animation: ;
+  animation: ;
+}
+#n3 {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  left: -45px;
+  top: -100px;
+  -webkit-animation: ;
+  animation: ;
+}
+.electronO {
+  position: absolute;
+  left: 60px;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+  text-align: center;
+  color: yellow;
+}
+@-webkit-keyframes revolve {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes revolve {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.protonO {
+  position: absolute;
+  top: 60px;
+  left: 100px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: red;
+  text-align: center;
+  color: cyan;
+}
+#rad {
+  position: absolute;
+  color: red;
+  top: -10px;
+  left: 120px;
+} /* atom diagram*/
+#atompic {
+  position: relative;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  top: 12px;
+  -webkit-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  transform: scale(0.6);
+}
+#atompic .Orbitpic {
+  height: 300px;
+  width: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 2;
+  left: 2;
+}
+.fig1 {
+  width: 150px;
+  margin: 0 auto;
+  display: block;
+}
+#atompic #O1 {
+  -webkit-transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
+  transform: rotate(50deg);
+  border: 2px blue solid;
+  top: 0;
+  left: 0;
+}
+#atompic #O2 {
+  -webkit-transform: rotate(-50deg);
+  -ms-transform: rotate(-50deg);
+  transform: rotate(-50deg);
+  border: 2px #ff4a00 solid;
+  top: 0;
+  left: 0;
+}
+#atompic #O3 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  border: 2px #66ff00 solid;
+  top: 0;
+  left: 0;
+}
+.Orbitpic .electron {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: 60px;
+  top: 2px;
+  background-color: red;
+  border-radius: 50%;
+}
+#atompic .proton {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: 130px;
+  background-color: #2a97ff;
+  border-radius: 50%;
+}
+#atompic #p1 {
+  position: absolute;
+  left: 50px;
+}
+#atompic #p2 {
+  position: absolute;
+  top: 150px;
+  left: 35px;
+}
+#atompic #p3 {
+  position: absolute;
+  top: 143px;
+  left: 20px;
+}
+#atompic .neutron {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: 130px;
+  background-color: #002eff;
+  border-radius: 50%;
+}
+#atompic #n1 {
+  position: absolute;
+  left: 35px;
+}
+#atompic #n2 {
+  position: absolute;
+  top: 150px;
+  left: 50px;
+}
+.line {
+  background-color: black;
+  width: 150px;
+  height: 2px;
+}
+#eline {
+  position: absolute;
+  left: 85px;
+  top: 10px;
+}
+#elabel {
+  left: 240px;
+}
+.label {
+  font-size: 25px;
+  position: absolute;
+}
+#plabel {
+  top: 125px;
+  left: 240px;
+}
+#pline {
+  position: absolute;
+  left: 80px;
+  top: 135px;
+}
+#nlabel {
+  top: 155px;
+  left: 240px;
+}
+#nline {
+  position: absolute;
+  left: 80px;
+  top: 165px;
+}
+#olabel {
+  top: 255px;
+  left: 240px;
+}
+#oline {
+  position: absolute;
+  left: 80px;
+  top: 265px;
+}

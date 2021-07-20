@@ -1,0 +1,467 @@
+body {
+	width: 100vw;
+}
+
+.main {
+	padding: 15px;
+	font-size: 22px;
+}
+  }
+
+p {
+	color: white;
+	font-size: 25px;
+}
+
+.law {
+	color: red;
+}
+
+.ani {
+	background-color: white;
+	height: 200px;
+	width: 100vw;
+	display: block;
+	margin: -15px;
+	overflow: clip;
+	padding: 0;
+}
+
+#slides {
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+ overflow-x: hidden;
+ width: 100vw;
+}
+
+.slide {
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: ;
+	display: block;
+	overflow: hidden;
+	-webkit-transition: opacity 1s;
+	-;
+}
+
+h1 {
+	font-size: 30px;
+	padding: auto;
+	margin: auto;
+}
+
+button {
+	width: 30%;
+	background-color: #0b0b0b;
+	color: white;
+	border-radius: 10px;
+	padding: 10px;
+	text-align: center;
+	border: 0px;
+	margin: 25px 5px 5px 0;
+	font-size: 20px;
+	cursor: pointer;
+	height: 40px;
+}
+
+button:not(.previousf):not(.previous):not(.next):not(.pass) {
+	display: block;
+	margin: 5px auto;
+}
+
+.previous {
+	float: left;
+}
+
+.previousf {
+	opacity: 0.2;
+}
+
+.next {
+	right: 0px;
+	float: right;
+}
+
+.pass {
+	right: 0px;
+	float: right;
+}
+
+#no {
+	visibility: hidden;
+}
+
+.crt {
+	color: inherit;
+	transition: color 0.5s;
+}
+
+.crt:hover {
+	color: #12ab0e;
+}
+
+.wrg {
+	color: inherit;
+	transition: color 2s;
+}
+
+.wrg:hover {
+	color: #ab1500;
+}
+
+.cong {
+	width: 15vw;
+	height: 10vh;
+	animation: popping 2s ease-in 0s infinite normal forwards;
+}
+
+@keyframes popping {
+	from {
+		transform: scale(0.01);
+	}
+
+	to {
+		transform: scale(1);
+	}
+}
+
+button>a {
+	text-decoration: none;
+	color: white;
+}
+
+#nd {
+	position: relative;
+	left: 50vw;
+}								 			 
+
+
+/*quiz styles*/
+.questions {
+	padding: 0px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+fieldset {
+	border: 2px solid #00c1ff;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	margin: 10px;
+}
+
+form {
+	font-size: 20px;
+}
+
+.slide form {
+	width: 80%;
+	margin: 5px auto;
+}
+
+.slide .main {
+	padding: 15px;
+	font-family: 'poppins';
+}
+@keyframes slideInRight {
+	from {
+		left: 100%;
+	}
+	to {
+		left: 0%;
+	}
+}
+.slideInFromRight {
+	animation: slideInRight 0.8s ease-out 0s 1 normal forwards;
+	/*position: relative;*/
+}
+.hide{display: none;}.show{display: block;}
+.slideOutFromRight {
+	animation: slideOutRight 0.75s ease-out 0s normal forwards;
+}
+@keyframes slideOutRight {
+	from {
+		left: 0%;
+	}
+	to{
+		left: -100%;
+	}
+}
+.slideInFromLeft{
+		animation: slideInLeft 1s ease-out 0s 1 normal forwards;
+}
+@keyframes slideInLeft {
+		from {
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(0%);
+	}
+}
+.slideOutFromLeft {
+	animation: slideOutLeft 0.6s ease-out 0s normal forwards;
+}
+@keyframes slideOutLeft {
+	from {
+		transform: translateX(0%);
+	}
+	to {
+		transform: translateX(100%);
+	}
+}
+.centerS {
+	text-align: center;
+}
+
+.summ {
+	text-align: left;
+}
+
+#congrat {
+	display: none;
+}
+
+#congrats img {
+	margin-left: -50%;
+}
+
+.cursive {
+	font-family: cursive;
+}
+
+#congrat>h3 {
+	font-size: 20px;
+}
+
+table {
+	margin: 5px auto;
+	width: 95vw;
+	font-size: 18px;
+}
+
+th,td,tr {
+	border: 0.1em solid #0074ac;
+}
+/* Customize the label (the container) */
+.container {
+	  display:  block;
+	  position:  relative;
+	  padding-left:  35px;
+	  margin-bottom:  12px;
+	  cursor:  pointer;
+	  font-size:  22px;
+	  -webkit-user-select:  none;
+	  -moz-user-select:  none;
+	  -ms-user-select:  none;
+	  user-select:  none;
+}
+
+.container input {
+	  position:  absolute;
+	  opacity:  0;
+	  cursor:  pointer;
+	  height:  0;
+	  width:  0;
+}
+
+.checkmark {
+	  position:  absolute;
+	  top:  0;
+	  left:  0;
+	  height:  25px;
+	  width:  25px;
+	  background-color:  #eee;
+	  border-radius:  50%;
+}
+
+input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius: 50%;
+	width: 26px;
+	height: 26px;
+	border: 2px solid #00c1ff;
+	margin-right: 5px;
+	position: relative;
+	top: 4px;
+	transition: 180ms all ease-in-out;
+	opacity: 0.8;
+}
+
+input:checked {
+	border: 6px solid #00c1ff;
+	color: black;
+	transform: scale(1.05);
+	opacity: 1;
+	outline: unset !important /* I added this one for Edge (chromium) support */;
+}
+
+#myProgress {
+	width: 100%;
+	background-color: #aae0ff;
+	border-radius: 5px;
+}
+
+#myBar {
+	width: 0%;
+	height: 30px;
+	background-color: #4CAF50;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 5px;
+	color: white;
+}
+
+.resultStat {
+	border-radius: 4px;
+	width: 75vw;
+	background: rgba( 255, 255, 255, 1 );
+	border-radius: 6px;
+	box-shadow: 3px 3px 15px #ddd, 
+            -4px -4px 17px #fff;
+	margin: 10px auto;
+	padding: 5px auto;
+}
+
+.resultStat li {
+	margin: 10px auto;
+}
+
+.main .resultStat a {
+	color: #00acff;
+	font-size: 20px;
+	margin: 2px;
+	text-decoration: none;
+}
+
+.g-stats {
+	padding: 10px;
+}
+
+.profilePic {
+	height: 8em;
+	width: 8em;
+	border-radius: 50%;
+	display: flex;
+	margin: 10px auto;
+	border: 2px #fff solid;
+}
+
+.ppicCon>h4 {
+	display: flex;
+	justify-content: center;
+	font-size: 1.2em;
+}
+
+.sum-stats {
+	text-align: left;
+}
+
+.sum-stats h3 {
+	padding: 5px;
+	margin: 5px;
+	background-color: white;
+}
+
+.sum-stats h3 span {
+	color: #fff;
+	width: 1.8em;
+	height: 1.8em;
+	font-size: 0.8em;
+	float: right;
+	text-align: center;
+	line-height: 1.8em;
+	border-radius: 50%;
+	background-color: #00acff;
+}
+
+.mainR {
+	font-size: 20px;
+}
+
+@media(min-width: 600px) {
+	.g-stats {
+		width: 38.195vw;
+		position: fixed;
+		max-height: calc(100vh - 9rem);
+		height: 100vh;
+		top: auto;
+		left: 0;
+		z-index: 1;
+		overflow-x: hidden;
+	}
+
+	.mainR {
+		margin-left: 40%;
+		position: fixed;
+		max-height: calc(100vh - 9rem);
+		overflow-y: auto;
+		width: 61.805vw;
+		height: 500vh;
+		overflow-x: hidden;
+	}
+
+	.resultStat {
+		width: 40vw;
+	}
+
+	.slide form {
+		width: 55%;
+	}
+
+	button {
+		width: 15%;
+	}
+}
+
+#recom a {
+	margin: 2px;
+	padding: 2px;
+	color: #0097ff;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+#module {
+	overflow: scroll;
+}
+
+#timer {
+	text-align: right;
+	font-size: 24px;
+	font-weight: bold;
+	color: white;
+	background-color: #00acff;
+	border-radius: 4px;
+	margin: -10px 10px 0 10%;
+	padding: 10px;
+	display: inline-block;
+}
+
+@media(max-width: 450px) {
+	.LearnH {
+		font-size: 2em;
+	}
+}
+
+.g-stats {
+	margin: -15px;
+}
+
+.sup {
+	font-size: 10px;
+	position: relative;
+	margin-left: 5px;
+}
+
+.sub {
+	font-size: 10px;
+}
+.del{
+		background: #ff352a;
+		width: auto;
+}

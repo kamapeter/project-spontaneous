@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<link rel="stylesheet" href="../css/stylep.css">
+		<link rel="stylesheet" href="../css/form.css">
+		<meta http-equiv="CONTENT-TstorageYPE" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#00acff">
+    <meta name="msapplication-navbutton-color" content="#00acff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#00acff">
+		<title>customize calculatir</title>
+</head>
+<body>
+		<h1 class="blueH">Set Preference</h1>
+		<img class="topImg" src="../img/settings.svg"></img>
+		<div class="pref">
+				Use custom Keyboard 
+				<span class="right">
+	       <input type="checkbox" id="switch">
+	       <label for="switch" class="custom"></label>
+				</span>
+		</div>
+		<div class="pref inactive" id="fg">
+		  Select prefered custom :
+		  <span class="right">
+		  <select size="2" id="keyType">
+				<option value="fullKey">Full num-pad</option>
+				<option value="essKey">Essential keys</option>
+		  </select>
+		  </span>
+		</div>
+		<div class="pref">
+				Select preferred decimal places:
+				<span class="right">
+				<select size ="5" id="setDeci">
+				  <option>0</option>
+				  <option>1</option>
+				  <option>2</option>
+				  <option>3</option>
+				  <option>4</option>
+				  <option>5</option>
+				  <option>6</option>
+				  <option>7</option>
+				  <option>8</option>
+				  <option>9</option>
+				  <option>10</option>
+		  </select>
+		  </span>
+		</div>
+		<div class="pref">  
+				Select Preferred value of g :
+				<span class="right">
+				<select size="3" id="setG">
+				  <option>9.81</option>
+				  <option>9.78</option>
+				  <option>10</option>
+		   </select>
+		   </span>
+		</div>
+		<div class="pref">
+				Use dark mode : 
+				<span class="right">
+	       <input type="checkbox" id="switch2" id="setDark">
+	       <label for="switch2" class="custom"></label>
+				</span>
+		</div>
+		<button class="pref" id="save">Save Changes</button>
+<script src="../script/config.js">				
+</script>
+</body>
+</html>
