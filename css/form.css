@@ -467,15 +467,21 @@ input:checked + label:after {
   width: 3em;
   height: 2em;
 }
-.keyB input[type="button"]:focus,
-.dark .keyB input[type="button"]:focus {
+.keyB input[type="button"]:focus {
   color: #3498db;
   -webkit-box-shadow: inset -3px -3px 7px #ffffff73,
     inset 2px 2px 5px rgba(94, 104, 121, 0.288);
   box-shadow: inset -3px -3px 7px #ffffff73,
     inset 2px 2px 5px rgba(94, 104, 121, 0.288);
 }
-.keyB .ro input[type="button"] {
+.dark .keyB input[type="button"]:focus {
+		color: #3498db;
+  -webkit-box-shadow: inset -3px -3px 7px #aaa,
+    inset 2px 2px 5px rgba(2, 5, 4, 0.288);
+  box-shadow: inset -3px -3px 7px #222,
+      inset 2px 2px 5px rgba(120,120,120,1);
+}
+keyB .ro input[type="button"] {
   width: 4em;
   height: 3em;
 }
