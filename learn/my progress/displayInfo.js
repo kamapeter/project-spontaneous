@@ -44,13 +44,15 @@ $(document).ready(function() {
         $('.ppicCon').append(ppic);
         pname = `<h4>${Account.name}</h4>`;
         $('.ppicCon').append(pname);
-        $("#high").html(" " + Math.max.apply(null, arrScore) + "%");
-        $("#minS").html(" " + Math.min.apply(null, arrScore).toFixed(0) + "%");
-        var mean = arrScore.reduce(function(pv, cv, i, ar) {
-          var dvd = ar.length;
-          return pv + cv / dvd;
-        }, 0);
-        $("#meanS").html(" " + mean.toFixed(0) + "%");
+        if(arrScore){
+        		$("#high").html(" " + Math.max.apply(null, arrScore) + "%");
+        		$("#minS").html(" " + Math.min.apply(null, arrScore).toFixed(0) + "%");
+        		var mean = arrScore.reduce(function(pv, cv, i, ar) {
+          		var dvd = ar.length;
+          		return pv + cv / dvd;
+        		}, 0);
+        		$("#meanS").html(" " + mean.toFixed(0) + "%");
+        }
         var pro = ((allResults.length / 40) * 100).toFixed(2);
         $(" #myBar").animate({
           width: pro + "%"
