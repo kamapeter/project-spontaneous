@@ -1,10 +1,11 @@
-const crt = document.getElementsByClassName('crct');
+ const crt = document.getElementsByClassName('crct');
 const btn = document.getElementById('btn');
 const recom = document.getElementById('recom');
 const dscore = document.getElementById('score');
 const cong = document.getElementById('congrat');
 const quiz = document.getElementById('quiz');
 const unitScore = 100 / crt.length;
+const link = quiz.getAttribute("data-link");
 
 function grade() {
   score = 0;
@@ -34,7 +35,11 @@ function grade() {
   //$('#congrat #recom span').wrap('<a href="module1.html"  class="disp"></a>')
   jQuery.each(unRec(rec),
     function(index, item) {
-      $("<a href='module1.html' class='disp'></a>").text(item).appendTo("#recom");
+      var linkNow = link.slice(link.indexOf("/") + 1, )
+      $("<a class='disp'></a>")
+      .attr("href", linkNow)
+      .text(item)
+      .appendTo("#recom");
     });
   Result = {
     name: quiz.getAttribute("data-name"),
@@ -42,7 +47,7 @@ function grade() {
     time: t,
     freq: 1,
     recom: preRec.length >= 1 ? preRec : " All Perfect",
-    link: quiz.getAttribute("data-link")
+    link: link
   }
 console.log(Result.link);
   function saveResult(allResult, Result) {
@@ -95,7 +100,7 @@ window.onload = function() {
 $('#congrat #recom').on('click', '.disp', function(e) {
   e.preventDefault();
   console.log('test');
-  var url = $(this).attr('href') + '#' + $(this).text();
+  var url = $(this).attr('href') + ' #' + $(this).text();
   $('#module').html('loading...').load(url);
   console. log(url);
  // this.attr("href") = url;
