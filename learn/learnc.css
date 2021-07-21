@@ -362,19 +362,20 @@ input:checked {
 }
 
 .sum-stats h3 {
-	padding: 5px;
+	padding: 10px;
 	margin: 5px;
 	background-color: white;
 }
 
 .sum-stats h3 span {
 	color: #fff;
-	width: 1.8em;
-	height: 1.8em;
+	width: 2.3em;
+	height: 2.3em;
 	font-size: 0.8em;
 	float: right;
 	text-align: center;
-	line-height: 1.8em;
+	margin:-5px 2px 0 0;
+	line-height: 2.3em;
 	border-radius: 50%;
 	background-color: #00acff;
 }
