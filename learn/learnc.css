@@ -418,7 +418,7 @@ input:checked {
 		width: 15%;
 	}
 }
-
+#recom {overflow-wrap: break-word}
 #recom a {
 	margin: 2px;
 	padding: 2px;
