@@ -53,7 +53,9 @@ $(document).ready(function() {
         		}, 0);
         		$("#meanS").html(" " + mean.toFixed(0) + "%");
         }
-        var pro = ((allResults.length / 40) * 100).toFixed(2);
+        var pro = allResults? 
+        ((allResults.length / 40) * 100).toFixed(2):
+         0;
         $(" #myBar").animate({
           width: pro + "%"
         }, 800).text(pro + '%');
