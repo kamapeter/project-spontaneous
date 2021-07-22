@@ -36,6 +36,7 @@ fire.onclick = function () {
 				if(aD.className != "stringnBob") {
 								aD.className = "stringnBob";
 								addinc = setInterval(x,10);
+								document.querySelector("#info").style.display = "none";
 								setTimeout(function () {
 												exp.style.display = "none";
 												anal.style.display = "block";
