@@ -32,7 +32,7 @@ aD.addEventListener("webkitAnimationEnd", function() {
 				clearInterval(addinc);
 				count.innerHTML = inc+1;
 }, false); 
-fire.onclick = function () {
+document.onclick = function () {
 				if(aD.className != "stringnBob") {
 								aD.className = "stringnBob";
 								addinc = setInterval(x,10);
