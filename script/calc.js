@@ -85,6 +85,7 @@
         }());
         if (prefs.keyType == "essKey") {
           keyB.addEventListener("click", function() {
+          if($(".focused")
             $(".focused").focus();
           }, false)
         }
