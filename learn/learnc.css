@@ -7,7 +7,6 @@ body {
 	font-size: 22px;
 }
   }
-
 p {
 	color: white;
 	font-size: 25px;
@@ -247,34 +246,34 @@ th,td,tr {
 }
 /* Customize the label (the container) */
 .container {
-	  display:  block;
-	  position:  relative;
-	  padding-left:  35px;
-	  margin-bottom:  12px;
-	  cursor:  pointer;
-	  font-size:  22px;
-	  -webkit-user-select:  none;
-	  -moz-user-select:  none;
-	  -ms-user-select:  none;
-	  user-select:  none;
+	  display: block;
+	  position: relative;
+	  padding-left: 35px;
+	  margin-bottom: 12px;
+	  cursor: pointer;
+	  font-size: 22px;
+	  -webkit-user-select: one;
+	  -moz-user-select: none;
+	  -ms-user-select: none;
+	  user-select: none;
 }
 
 .container input {
-	  position:  absolute;
-	  opacity:  0;
-	  cursor:  pointer;
-	  height:  0;
-	  width:  0;
+	  position: absolute;
+	  opacity: 0;
+	  cursor: pointer;
+	  height: 0;
+	  width: 0;
 }
 
 .checkmark {
-	  position:  absolute;
-	  top:  0;
-	  left:  0;
-	  height:  25px;
-	  width:  25px;
-	  background-color:  #eee;
-	  border-radius:  50%;
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  height: 25px;
+	  width: 25px;
+	  background-color: #eee;
+	  border-radius: 50%;
 }
 
 input {
@@ -416,6 +415,10 @@ input:checked {
 
 	button {
 		width: 15%;
+	}
+	.slideInFromLeft,.slideInLeft,.slideInRight,.slideInFromRight{
+	  animation-duration: 3s;
+	  animation-timing-function: linear;
 	}
 }
 #recom {overflow-wrap: break-word}
